@@ -26,7 +26,6 @@ def set_content(filepath, content):
     f = open(filepath, 'w')
     content = f.write(content)
     f.close()
-    return content
 
 def send_email(user, to, subject, body):
     email = MIMEText(body)
